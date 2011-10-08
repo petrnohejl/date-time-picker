@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Návod - Date &amp; Time Picker</title>
+</head>
+
+<body>
+
+<h1>Date &amp; Time picker</h1>
+<p>
+Date &amp; Time picker je program, napsaný v jazyce JavaScript. Umožňuje snadný výběr časových údajů (čas a datum) v HTML formulářích pomocí kalendáře. 
+</p>
+
+<h2>Funkce</h2>
+<ul>
+	<li>Výběr data pomocí kalendáře</li>
+	<li>Výběr času</li>
+	<li>Široké možnosti formátování časových údajů</li>
+	<li>Možnost zakázání přímé editace formulářového pole</li>
+	<li>Vyznačení aktuálního dne v kalendáři</li>
+	<li>Vyznačení vybraného dne v kalendáři podle data ve formulářovém poli</li>
+</ul>
+
+<h2>Rozšíření</h2>
+<p>
+Jako rozšíření byla implementována možnost vkládat časové údaje. Dalším rozšířením je použití formátování časových údajů jako v jazyce PHP, což umožňuje velmi široké možnosti formátování dle libovolných požadavků.
+</p>
+
+<h2>Podpora prohlížečů</h2>
+<p>
+Program funguje zaručeně na všech moderních prohlížečích (Internet Explorer 8, Mozilla Firefox, Opera, Safari, Chrome...).
+</p>
+
+<h2>Návod k použití</h2>
+<p>
+Date &amp; Time picker slouží jako skript, který přidává k textovému poli formuláře tlačítko, pomocí nějž lze zobrazit pop-up okno pro výběr data/času. Pro správnou funkčnost je potřeba vložit do hlavičky HTML dokumentu JS soubor <b>dateTimePicker.js</b> a CSS soubor <b>dateTimePicker.css</b>. Dále je potřeba nahrát do adresáře dokumentu obrázky <b>picker-date.png</b> a <b>picker-time.png</b> do složky <b>img</b>. V HTML dokumentu vytvoříme formulář s textovým polem input a definujeme jednoznačný parametr <b>id</b>, který se dále použije ve volání funkce. Potom na konec dokumentu vložíme samotné volání funkce, které má tvar:
+</p>
+<pre>datePicker(id, format, editable);</pre>
+<pre>timePicker(id, format, editable);</pre>
+<p>
+Funkce datePicker vytvoří výběr pro datum a timePicker vytvoří výběr pro čas. Parametr id je řetězec, reprezentující id parametr textového pole. Parametr format je formátovací řetězec a editable je booleovská proměnná, která značí, zda bude pole editovatelné. Na začátku souboru <b>dateTimePicker.js</b> jsou definovány konstanty, které lze upravovat (např. pojmenování měsíců, dnů v týdnu a překlady všech použitých slov). Program lze tedy snadno přeložit do jiného jazyka. Všechny prvky kalendáře mají své třídy, a proto lze snadno upravovat jejich vzhled v CSS souboru.
+</p>
+
+<h2>Formátovací řetězce</h2>
+<p>
+Formátovací řetězce používají stejný syntax jako jazyk PHP:
+</p>
+<pre>
+y ... rok jako dvojčíslí (00)
+Y ... rok jako čtyřčíslí (2000)
+L ... 0 (nepřestupný rok) nebo 1 (přestupný rok)
+z ... číslo dne v roce (001-365)
+m ... číslo měsíce (01-12)
+n ... číslo měsíce (bez případné úvodní nuly, 1-12)
+M ... anglická zkratka názvu měsíce (Jul)
+F ... anglický název měsíce (July)
+d ... číslo dne v měsíci (01-31)
+j ... číslo dne v měsíci (bez případné úvodní nuly, 1-31)
+t ... počet dní v daném měsíci (28-31)
+S ... anglická koncovka čísla dne v měsíci (st, nd, rd, th)
+D ... anglická zkratka názvu dne v týdnu (Mon)
+l ... anglický název dne v týdnu (Monday)
+w ... číslo dne v týdnu (0-6 nebo 1-7 v závislosti na verzi PHP - neděle má číslo 0 nebo 7)
+
+h ... hodiny (01-12)
+g ... hodiny (bez případné úvodní nuly, 1-12)
+H ... hodiny (01-23)
+G ... hodiny (bez případné úvodní nuly, 1-23)
+a ... am/pm (dopoledne/odpoledne)
+A ... AM/PM (dopoledne/odpoledne)
+i ... minuty (00-59)
+s ... sekundy (00-59)
+U ... počet sekund od 1. ledna 1970
+</pre>
+
+<h2>Autor</h2>
+<p>
+Petr Nohejl<br />
+3. 5. 2010 
+</p>
+
+</body>
+</html>
+
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Date &amp; Time Picker</title>
+	<link href="demo.css" rel="stylesheet" type="text/css" />
+	<link href="dateTimePicker.css" rel="stylesheet" type="text/css" />
+	<script src="dateTimePicker.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div id="wrap">
+	<div id="content">
+		<h1><a href="index.html">Date &amp; Time Picker</a></h1>
+		<form action="" method="get">
+			<fieldset>
+				<legend>Base usage</legend>
+				<ul>
+					<li>
+						<label for="date-picker-1">Date:</label>
+						<input type="text" value="" name="date1" id="date-picker-1" />					
+					</li>
+					<li>
+						<label for="time-picker-1">Time:</label>
+						<input type="text" value="" name="time1" id="time-picker-1" />
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Disabled edit</legend>
+				<ul>
+					<li>
+						<label for="date-picker-2">Date:</label>
+						<input type="text" value="" name="date2" id="date-picker-2" />					
+					</li>
+					<li>
+						<label for="time-picker-2">Time:</label>
+						<input type="text" value="" name="time2" id="time-picker-2" />
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Examples of date formats</legend>
+				<ul>
+					<li>
+						<label for="date-picker-3">"j. n. Y":</label>
+						<input type="text" value="" name="date3" id="date-picker-3" />					
+					</li>
+					<li>
+						<label for="date-picker-4">"l jS F Y":</label>
+						<input type="text" value="" name="date4" id="date-picker-4" />					
+					</li>
+					<li>
+						<label for="date-picker-5">"D d-m-y":</label>
+						<input type="text" value="" name="date5" id="date-picker-5" />					
+					</li>
+					<li>
+						<label for="date-picker-6">"z":</label>
+						<input type="text" value="" name="date6" id="date-picker-6" />					
+					</li>
+					<li>
+						<label for="date-picker-7">"U":</label>
+						<input type="text" value="" name="date7" id="date-picker-7" />					
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Examples of time formats</legend>
+				<ul>
+					<li>
+						<label for="time-picker-3">"h:i A":</label>
+						<input type="text" value="" name="time3" id="time-picker-3" />
+					</li>
+					<li>
+						<label for="time-picker-4">"g-i-s-a":</label>
+						<input type="text" value="" name="time4" id="time-picker-4" />
+					</li>
+				</ul>
+			</fieldset>
+		</form>
+		<p><small id="copyright">
+			Project WAP, Faculty of Information Technology, BUT<br />
+			&copy; 2010 <a href="http://jestrab.net/">Petr Nohejl</a>
+		</small></p>
+	</div>
+</div>
+
+<script type="text/javascript">
+	// id, format, editable
+	datePicker("date-picker-1", "Y-m-d", true);
+	timePicker("time-picker-1", "H:i:s", true);
+	datePicker("date-picker-2", "Y-m-d", false);
+	timePicker("time-picker-2", "H:i:s", false);
+	datePicker("date-picker-3", "j. n. Y", true);
+	datePicker("date-picker-4", "l jS F Y", true);
+	datePicker("date-picker-5", "D d-m-y", true);
+	datePicker("date-picker-6", "z", true);
+	datePicker("date-picker-7", "U", true);
+	timePicker("time-picker-3", "h:i A", true);
+	timePicker("time-picker-4", "g-i-s-a", true);
+</script>
+
+</body>
+</html>

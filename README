@@ -1,0 +1,14 @@
+--------------------------------------------------------------------------------
+
+Date & Time Picker
+(c) 2010 Petr Nohejl
+
+Projekt Date & Time Picker byl vytvořen v rámci předmětu WAP (Internetové
+aplikace) na FIT VUT v Brně. Date & Time picker je program, napsaný v jazyce
+JavaScript. Umožňuje snadný výběr časových údajů (čas a datum) v HTML
+formulářích pomocí kalendáře. Jako rozšíření projektu byla implementována
+možnost vkládat časové údaje. Dalším rozšířením je použití formátování časových
+údajů jako v jazyce PHP, což umožňuje velmi široké možnosti formátování dle
+libovolných požadavků. Více informací naleznete v dokumentaci.
+
+--------------------------------------------------------------------------------

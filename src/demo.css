@@ -1,0 +1,22 @@
+/* DOCUMENT COLOR SCHEME: http://www.colorcombos.com/color-scheme-141.html (004489,E1E1D6,D3D9DF,989898,565656,DBDBCE */
+
+@media screen, projection {
+	
+	* {margin:0;padding:0;}
+	body {background:#D3D9DF;color:#565656;font-family: sans-serif;}
+	h1 {color:#565656;margin-bottom:0.5em;}
+	h1 a {color:#565656;margin-bottom:0.5em;text-decoration:none;}
+	fieldset {margin-bottom:1em;padding:10px 10px;width:400px;}
+	fieldset legend {padding:0 2px;}
+	fieldset ul {list-style:none;margin-left:2px;padding-top:10px;}
+	fieldset ul li {margin-bottom:10px;clear:both;height:24px;}
+	fieldset label {float:left;display:inline-block;width:100px;}
+	small, small a {font-size:10px;color:#989898;text-decoration:none;}
+
+	#wrap {width:800px;margin:20px auto;}
+	#content {background:#E1E1D6;padding:20px;border:solid 1px #989898;}
+	#copyright {display:block;text-align:right;}
+}
+@media print {
+
+}

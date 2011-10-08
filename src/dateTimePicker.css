@@ -1,0 +1,37 @@
+/* DATE & TIME PICKER */
+.picker-date, .picker-time {float:left;width:200px;padding:2px;}
+
+/* tlacitko */
+.picker-date-button {background: transparent url(img/picker-date.png) no-repeat scroll center center;}
+.picker-time-button {background: transparent url(img/picker-time.png) no-repeat scroll center center;}
+.picker-date-button, .picker-time-button {display:block;overflow:hidden;float:left;width:16px;height:16px;margin:0;padding:3px;text-indent:-2000px;}
+
+/* popup okno */
+.picker-date-popup {}
+.picker-time-popup {}
+.picker-date-popup, .picker-time-popup {background:#DBDBCE;border:solid 1px #989898;position:absolute;}
+.picker-date-popup table, .picker-time-popup table {border-collapse:collapse;}
+
+/* cas - tabulka casu */
+.picker-time-popup th {text-align:center;font-size:12px;}
+.picker-time-popup td {text-align:center;font-size:12px;}
+.picker-time-popup td.odd {background:#DBDBCE;}
+.picker-time-popup td.even {background:#E4E4D8;}
+.picker-time-popup td.active a {background:#565656;color:#FFFFFF;}	
+.picker-time-popup td:hover a {background:#565656;color:#FFFFFF;}
+.picker-time-popup td a {color:#565656;text-decoration:none;display:block;width:120px;padding:2px;}
+
+/* kalendar - hlavicka tabulky */
+.picker-date-popup thead th, .picker-date-popup thead th a {background:#565656;color:#fff;}
+.picker-date-popup thead th.title a {text-decoration:none;}
+.picker-date-popup thead th.navi a {text-decoration:none;font-size:16px;display:block;width:20px;}
+.picker-date-popup tbody th {border-bottom:solid 1px #CCCCCC;}
+
+/* kalendar - obsah kalendare */
+.picker-date-popup th, .picker-date-popup td {text-align:center;font-size:12px;font-weight:normal;vertical-align:middle;width:20px;height:20px;}
+.picker-date-popup th.sat a, .picker-date-popup th.sun a {background:#E4E4D8;}
+.picker-date-popup td.sat a, .picker-date-popup td.sun a {background:#E4E4D8;}
+.picker-date-popup td.today a {background:#F2F2E6;}
+.picker-date-popup td.active a {background:#565656;color:#FFFFFF;}	
+.picker-date-popup td:hover a {background:#565656;color:#FFFFFF;}
+.picker-date-popup td a {background:#DBDBCE;color:#565656;text-decoration:none;display:block;width:20px;padding:3px 0;margin:0.5px;border:1px solid #CCCCCC;}
